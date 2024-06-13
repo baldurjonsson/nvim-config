@@ -25,10 +25,17 @@ require('mason-lspconfig').setup({
 
 local cmp = require("cmp")
 local cmp_action = require('lsp-zero').cmp_action()
+local lspkind = require('lspkind')
 
 
 cmp.setup({
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = 'symbol_text',
+    }),
+  },
   sources = cmp.config.sources({
+      { name = 'supermaven' },
       { name = 'nvim_lsp' },
   }),
   mapping = cmp.mapping.preset.insert({
