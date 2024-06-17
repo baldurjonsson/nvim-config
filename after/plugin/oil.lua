@@ -5,7 +5,8 @@ require("oil").setup({
   },
   win_options = {
     signcolumn = "yes:2",
-    winbar = "%{v:lua.require('oil').get_current_dir()}",
+    -- winbar = "%{v:vim.fn.getcwd()} %{v:lua.require('oil').get_current_dir()}",
+    winbar = "%{v:lua.string.sub(v:lua.require('oil').get_current_dir(),v:lua.string.len(v:lua.vim.fn.getcwd())+1)}",
   },
 })
 
