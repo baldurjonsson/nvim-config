@@ -14,3 +14,4 @@ end
 
 vim.keymap.set("n", "<leader>gs", function() GitWindow() end, {})
 vim.keymap.set("n", "<leader>gf", function() GitWindow(true) end, {})
+vim.keymap.set("n", "<leader>gp", function() vim.cmd.Git("push") end, {})
