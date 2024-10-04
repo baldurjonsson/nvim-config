@@ -6,6 +6,9 @@ cmp.setup({
   formatting = {
     format = lspkind.cmp_format({
       mode = 'symbol_text',
+      symbol_map = {
+        Supermaven = "",
+      },
     }),
   },
   sources = cmp.config.sources({
