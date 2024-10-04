@@ -48,3 +48,6 @@ cmp.setup.filetype({ "sql", "mysql" }, {
     { name = "supermaven" },
   },
 })
+cmp.setup.filetype({ "gitcommit" }, {
+  sources = {}
+})
