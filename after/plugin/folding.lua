@@ -1,6 +1,5 @@
 require('origami').setup({
-  keepFoldsAcrossSessions = true,
+  keepFoldsAcrossSessions = false,
   pauseFoldsOnSearch = true,
-  setupFoldKeymaps = true,
   hOnlyOpensOnFirstColumn = false,
 })
