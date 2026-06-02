@@ -1,0 +1,1 @@
+{"macros": [{"name": "todoentry", "raw": "Z2cvJIBrYl4kLw06ciFkYXRlICsiXCVZLVwlbS1cJWQiDUkjIANvAw==", "content": "gg/$<BS>^$/<CR>:r!date<Space>+\"\\%Y-\\%m-\\%d\"<CR>I#<Space><C-C>o<C-C>"}]}
