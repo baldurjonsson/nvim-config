@@ -1,0 +1,22 @@
+-- local file = "/Users/baldur/Developer/docs/todo.md"
+-- vim.api.nvim_create_autocmd("BufReadPre", {
+--   pattern = file,
+--   callback = function()
+--     vim.fn.system("git pull")
+--   end,
+-- })
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--   pattern = file,
+--   callback = function()
+--     vim.fn.system("git add " .. file)
+--     vim.fn.system("git commit -m 'update todo.md'")
+--     vim.fn.system("git push")
+--   end,
+-- })
+--
+-- vim.keymap.set("n", "<leader>te", "gg/^$/<CR><cmd>r!date<Space>+\"\\%Y-\\%m-\\%d\"<CR>I#<Space><C-C>o<C-C>")
+--
+-- -- https://www.reddit.com/r/neovim/comments/1e5h2df/toggle_checkboxes_easily/
+-- vim.keymap.set("n", "<leader>tx", [[:exec search("- \\[ \\]", "bcn", line(".")) ? "norm ci]x" : "norm ci] "<CR>]])
+-- vim.keymap.set("x", "<leader>tx",
+--   [[:<C-U>exec search("- \\[ \\]", "bcn", line("'<")) ? "'<,'>norm ci]x" : "'<,'>norm ci] "<CR>]])

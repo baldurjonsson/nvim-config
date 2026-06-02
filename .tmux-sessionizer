@@ -1,0 +1,3 @@
+#tmux new-window -d -n 'claude' 'claude'
+# tmux rename-window 'neovim'
+nvim .
